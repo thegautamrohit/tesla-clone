@@ -11,18 +11,23 @@ function Header() {
 
   return (
     <Container>
-      <a>
+      <a href="!#">
         <img src="/images/logo.svg" alt="" />
       </a>
       <Menu>
-        {cars && cars.map((car, index) => <a key={index}> {car} </a>)}
+        {cars &&
+          cars.map((car, index) => (
+            <a href="!#" key={index}>
+              {car}
+            </a>
+          ))}
 
-        <a>Solar Roof</a>
-        <a>Solar Panels</a>
+        <a href="!#">Solar Roof</a>
+        <a href="!#">Solar Panels</a>
       </Menu>
       <RightMenu>
-        <a>Shop</a>
-        <a>Tesla Account</a>
+        <a href="!#">Shop</a>
+        <a href="!#">Tesla Account</a>
         <CustomMenu onClick={() => setShow(true)} />
       </RightMenu>
 
@@ -33,27 +38,27 @@ function Header() {
         {cars &&
           cars.map((car, index) => (
             <li key={index}>
-              <a> {car} </a>
+              <a href="!#"> {car} </a>
             </li>
           ))}
 
         <li>
-          <a>Existing Inventory</a>
+          <a href="!#">Existing Inventory</a>
         </li>
         <li>
-          <a>Used Inventory</a>
+          <a href="!#">Used Inventory</a>
         </li>
         <li>
-          <a>Trade-in</a>
+          <a href="!#">Trade-in</a>
         </li>
         <li>
-          <a>CyberTruck</a>
+          <a href="!#">CyberTruck</a>
         </li>
         <li>
-          <a>Roadster</a>
+          <a href="!#">Roadster</a>
         </li>
         <li>
-          <a>Existing Inventory</a>
+          <a href="!#">Existing Inventory</a>
         </li>
       </BurgerNav>
     </Container>
