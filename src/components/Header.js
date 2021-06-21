@@ -58,7 +58,10 @@ function Header() {
           <a href="!#">Roadster</a>
         </li>
         <li>
-          <a href="!#">Existing Inventory</a>
+          <a href="!#">Test Drive</a>
+        </li>
+        <li>
+          <a href="!#">Support</a>
         </li>
       </BurgerNav>
     </Container>
